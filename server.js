@@ -7,6 +7,9 @@
  * Student Name  : Fardeen Hamed Raheem Khan
  * Student ID    : 166812214
  * Course/Section: WEB322 ZBB
+ * 
+ * Cyclic link - https://cheerful-gray-swordfish.cyclic.app
+ * Github link - https://github.com/FaddyKhan20041/web322-fkhan197
  *
  ******************************/
 
