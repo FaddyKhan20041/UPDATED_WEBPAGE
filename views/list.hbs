@@ -1,0 +1,32 @@
+<div>
+      <table class="rentals-table">
+            <thead>
+                  <tr>
+                        <th>Headline</th>
+                        <th>Number of Sleeps</th>
+                        <th>Number of Bedrooms</th>
+                        <th>Number of Bathrooms</th>
+                        <th>Price per Night</th>
+                        <th>City</th>
+                        <th>Province</th>
+                        <th>Image</th>
+                        <th>Featured Rental</th>
+                  </tr>
+            </thead>
+            <tbody>
+                  {{#each rentals}}
+                  <tr>
+                        <td>{{this.headline}}</td>
+                        <td>{{numSleeps}}</td>
+                        <td>{{numBedrooms}}</td>
+                        <td>{{numBathrooms}}</td>
+                        <td>{{pricePerNight}}</td>
+                        <td>{{city}}</td>
+                        <td>{{province}}</td>
+                        <td><img src="{{imageUrl}}" alt="{{headline}}"></td>
+                        <td>{{featuredRental}}</td>
+                  </tr>
+                  {{/each}}
+            </tbody>
+      </table>
+</div>

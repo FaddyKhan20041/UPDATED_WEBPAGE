@@ -1,0 +1,33 @@
+<div class="navbar">
+    <div class="left">
+        <img src="/images/cozycorner.jpeg" alt="logo">
+    </div>
+    <div class="right">
+        <ul>
+            <li><a href="/">HOME</a></li>
+            <li><a href="/rentals">RENTALS</a></li>
+
+
+
+            {{#if session.userData}}
+            <li><a href="/cart">CART</a></li>
+            <li><a href="/rentals/list">LIST</a></li>
+
+            <ul class="dropdown">
+                <li class="dropdown-btn"><a href="#">{{ session.userData.fname }}</a></li>
+
+                <li class="dropdown-content">
+                    <form action="/logout" method="post">
+                        <button type="submit">Log out</button>
+                    </form>
+                </li>
+            </ul>
+
+            {{else}}
+            <li><a href="/sign-up">SIGN UP</a></li>
+            <li><a href="/log-in">LOG IN</a></li>
+            {{/if}}
+
+        </ul>
+    </div>
+</div>

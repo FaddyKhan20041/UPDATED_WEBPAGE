@@ -1,0 +1,23 @@
+<div class="rental-cities">
+
+      {{#each rentals}}
+
+
+      <section class="cityProvince">
+            <center><b>
+                        <p id="province">{{cityProvince}}</p>
+                  </b></center>
+            <div class="grid">
+                  {{#each rentals}}
+                  <div class="card">
+                        {{#if ../../session.isCustomer}}
+                              {{>rental this isCustomer=true}}
+                        {{else}}
+                              {{>rental this}}
+                        {{/if}}
+                  </div>
+                  {{/each}}
+            </div>
+      </section>
+      {{/each}}
+</div>

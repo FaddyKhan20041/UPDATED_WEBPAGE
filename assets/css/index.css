@@ -1,0 +1,494 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+.navbar {
+  height: 260px;
+  background-color: #f6f6f6;
+}
+
+.left {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.left img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.right {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.right ul {
+  display: flex;
+  justify-content: center;
+}
+.right ul li {
+  list-style-type: none;
+  margin: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.right ul li a {
+  text-decoration: none;
+  font-size: 30px;
+  font-family: "Roboto Slab", serif;
+  color: #4b2613;
+  font-weight: bold;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 2px solid black;
+}
+.right ul li a:hover {
+  transition: 0.3s;
+  border-radius: 20px;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  padding: 3px 8em;
+  justify-content: center;
+  height: 600px;
+  align-items: center;
+  height: 800px;
+  position: relative;
+}
+#main::before {
+  content: "";
+  background: url("/images/e1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+#main h1 {
+  color: black;
+  text-align: center;
+  font-family: "Bree Serif", serif;
+}
+
+#examples {
+  background-color: #c2edce;
+}
+#Resorts img {
+  width: 300px;
+  height: 270px;
+}
+.examples p {
+  padding-left: 10px;
+  margin-left: 10px;
+}
+.examples {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.a1 {
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: #b0f2ff;
+  font-family: "Nunito", sans-serif;
+}
+
+#property {
+  padding: 20px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+#property p {
+  font-family: "Nunito", sans-serif;
+  font-size: 26px;
+  padding-bottom: 20px;
+}
+#property ul {
+  list-style-type: none;
+  font-size: 26px;
+  display: flex;
+}
+#property ul li {
+  font-size: 26px;
+  font-family: "Nunito", sans-serif;
+  color: #954b2b;
+}
+
+.email p {
+  font-family: "Nunito", sans-serif;
+  font-size: 34px;
+  color: #7e551c;
+  padding: 30px;
+}
+.email form label {
+  font-family: "Nunito", sans-serif;
+  font-size: 24px;
+}
+.email form input {
+  margin-left: 20px;
+  padding: 10px;
+  background: none;
+  border: 2px solid black;
+  transition: 0.3s;
+}
+
+form {
+  margin-left: 16px;
+}
+
+.copyright {
+  font-size: 14px;
+  margin: 20px;
+  padding-left: 20px;
+}
+.icon {
+  margin: 20px;
+  padding: 20px;
+}
+.icon i {
+  font-size: 20px;
+  padding: 6px;
+}
+hr {
+  color: black;
+  font-weight: bold;
+}
+
+#main p {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 200;
+  font-family: "Bree Serif", serif;
+}
+#main .btn {
+  padding: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+  background: none;
+  font-size: 400;
+}
+#main .btn:hover {
+  cursor: pointer;
+}
+#cq {
+  font-family: "Roboto Slab", serif;
+  font-size: 20px;
+}
+#cq .feature {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.first,
+.second,
+.third {
+  margin: 10px;
+  padding: 10px;
+}
+.first h3,
+.second h3,
+.third h3 {
+  border-bottom: 2px solid black;
+  font-size: 26px;
+  padding: 10px;
+}
+.first p,
+.second p,
+.third p {
+  padding: 10px;
+}
+
+#main .HH {
+  font-size: 70px;
+}
+#main p {
+  margin: 20px;
+  font-size: 20px;
+}
+
+/* login styling */
+.login {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+  padding: 20px;
+}
+.login h1 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 50px;
+  margin: 20px;
+}
+#log input[type="email"] {
+  padding: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 4px;
+}
+#log input[type="password"] {
+  padding: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 4px;
+}
+#log input[type="submit"] {
+  padding: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 4px;
+  background-color: rgb(255, 220, 220);
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 20px;
+  border: 1px solid black;
+}
+#log input[type="submit"]:hover {
+  box-shadow: 0px 0px 20px brown;
+  transition: 0.3s;
+}
+.login #form {
+  width: 30%;
+  padding: 20px;
+  margin: 10px;
+  border: 2px solid black;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+/* login */
+.signup {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+  padding: 20px;
+}
+.signup h1 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 40px;
+}
+.signup h4 {
+  padding: 10px;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 26px;
+  margin: 8px;
+}
+
+#sign input[type="submit"] {
+  padding: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 4px;
+  background-color: rgb(255, 220, 220);
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 20px;
+  border: 1px solid black;
+}
+#sign input[type="submit"]:hover {
+  box-shadow: 0px 0px 20px rgb(162, 57, 4);
+  transition: 0.3s;
+}
+#sign {
+  display: flex;
+  justify-content: center;
+}
+.signup #form {
+  width: 50%;
+  padding: 20px;
+  margin: 10px;
+  border: 2px solid black;
+  border-radius: 30px;
+}
+#sign input[type="text"] {
+  padding: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 4px;
+}
+#sign input[type="email"] {
+  padding: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 4px;
+}
+#sign input[type="password"] {
+  padding: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 4px;
+}
+
+.rental-cities {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.cityProvince {
+  margin-top: 40px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.grid {
+  grid-gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+#log input[type="text"] {
+  padding: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 4px;
+}
+.card {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background-color: #f1f1f1;
+  border-radius: 4px;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 10px;
+}
+
+.card p {
+  margin: 10px;
+}
+
+.card a {
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+  display: block;
+  margin: 10px;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+}
+
+.card a:hover {
+  background-color: #0069d9;
+}
+#province {
+  font-size: 46px;
+}
+.error {
+  color: rgb(255, 255, 255);
+  font-size: 0.7em;
+  background-color: rgb(243, 90, 90);
+  border-radius: 4px;
+  margin-top: 4px;
+  padding: 12px;
+}
+.error_to_user {
+  padding: 12px;
+  color: red;
+}
+
+.nav_small {
+  display: flex;
+  flex-direction: row;
+}
+.radio_button {
+  padding: 4px;
+}
+
+.logoutButton {
+  margin: auto;
+  margin-right: 10px;
+  padding: 12px;
+}
+
+.welcomemes {
+  width: 100%;
+  height: 50%;
+  padding: 20px;
+  margin: 10px;
+  border: 2px solid black;
+  border-radius: 30px;
+  text-align: center;
+}
+.welcomemes h4 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 40px;
+  margin: 20px;
+}
+.welcomemes img {
+  width: 100%;
+  object-fit: fill;
+}
+
+.rentals-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.rentals-table th,
+.rentals-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.rentals-table th {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+.rentals-table tr:hover {
+  background-color: #f5f5f5;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  display: block;
+  background-color: #f1f1f1;
+}
+
+.dropdown-btn:hover + .dropdown-content {
+  display: block;
+}
+button {
+  text-decoration: none;
+  font-size: 30px;
+  font-family: "Roboto Slab", serif;
+  color: #4b2613;
+  font-weight: bold;
+  padding: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 2px solid black;
+}

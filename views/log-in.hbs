@@ -1,0 +1,27 @@
+<div class="login">
+    <div id="form">
+        <center>
+            <h1>Welcome back</h1>
+        </center>
+
+        <form action="/login" method="POST" id="log">
+            <input type="radio" name="userType" value="DataEntryClerk" required checked>DataEntryClerk</input>
+            <br>
+            <input type="radio" name="userType" value="Customer" required>Customer</input>
+            <br>
+
+
+            <input type="text" name="email" id="email" placeholder="Email Address" value={{email}}>
+            <br>
+            {{#if emailMsg}}
+            <p class="error">{{emailMsg}}</p>
+            {{/if}}
+            <input type="password" name="password" id="password" placeholder="Password" value={{password}}>
+            <br>
+            {{#if passwordMsg}}
+            <p class="error">{{passwordMsg}}</p>
+            {{/if}}
+            <input type="submit" value="Login">
+        </form>
+    </div>
+</div>

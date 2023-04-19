@@ -1,0 +1,47 @@
+<h1>Shopping Cart</h1>
+{{#if rentalsInCart}}
+  <table class="rentals-table">
+    <thead>
+      <tr>
+        <th>Thumbnail</th>
+        <th>Headline</th>
+        <th>City</th>
+        <th>Province</th>
+        <th>Nights Reserved</th>
+        <th>Price per Night</th>
+        <th>Total Price</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+ 
+      {{#each rentalsInCart}}
+        <tr>
+          <td><img src="{{rental.imageUrl}}" alt="{{rental.headline}}"></td>
+          <td>{{rental.headline}}</td>
+          <td>{{rental.city}}</td>
+          <td>{{rental.province}}</td>
+          <td>
+            <form action="/cart/update/{{this._id}}" method="POST">
+              <input type="number" name="nights" value="{{this.nights}}" min="1" max="30">
+              <button type="submit">Update</button>
+            </form>
+          </td>
+          <td>${{rental.pricePerNight}}</td>
+          <td>$ {{getTotatlPrice rental.pricePerNight this.nights}}</td>
+          <td>
+            <form action="/cart/remove/{{this._id}}" method="POST">
+              <button type="submit">Remove</button>
+            </form>
+          </td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+
+  <p>Subtotal: ${{subtotal}}</p>
+
+  <form action="/cart/make-order" method="POST">
+              <button type="submit">Place Order</button>
+            </form>
+  {{/if}}
